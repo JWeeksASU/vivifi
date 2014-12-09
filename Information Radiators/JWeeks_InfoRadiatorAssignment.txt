@@ -1,0 +1,31 @@
+Information Radiator Proposal
+Jason Weeks
+9/24/2014
+Vivifi
+
+Feature: 
+	A link on the admin page that will display what advertising medium is pulling in the most users.
+
+Purpose:
+	The purpose of this feature is to allow tracking of where artists/ensembles and planners are 
+	learning about the site, to better understand what advertising mediums are most effective. This 
+	information can help Vivifi with their future marketing plans, by creating a visualization of what 
+	current advertisements, if any, are actually bringing in their desired users.
+
+Design:
+	This feature can be coded into the main artist/ensemble and planner registration pages. The 
+	question can be added to the current form as a set of radio buttons or list where artists and 
+	planners can indicate what brought them to the site. When the user submits the form, the 
+	selected option would be stored in the database along with the rest of the users data. The
+	current plan is to develop the database using MySQL or Ajax. Since, we are in the process of 
+	setting up the database, adding this feature wouldn’t add a lot of time or man power to the 
+	development process. A few queries would need to be written to access and sort the information.
+	The resulting output would be a printable spreadsheet or table displaying the advertisement 
+	options ranked greatest to least. 
+
+Estimated Time: 8 hours, 1 person
+
+
+
+
+

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--
+Project Vivi-Fi 
+CIS440
+Nick Muscara
+Alex Lepak
+Jason Weeks
+Jessa Short
+Justin Choi
+Christian Valenty
+-->
+
+<html>
+	<head>	
+		<title>Vivifi</title>
+
+		<meta name="viewport" content="width=device-width, initial=scale=1.0">
+
+		<!-- Meta tag -->
+		<!-- Keeps search engines from finding this particular site -->
+		<meta name = "robots" content="noindex, nofollow"/>
+		
+		<!--Ensures proper rendering and touch zooming-->
+		<!--Bootstrap hints at http://getbootstrap.com/css/ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Link tag for Bootstrap CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		
+		<!--Link tag for Nav CSS -->
+		<link href="css/main.css" rel="stylesheet">
+		
+		<!--Javascript Link -->
+		<script type="text/javascript"
+			src="js/navJs.js"></script>
+
+		<!-- link for favicon -->
+		<link rel=icon href=images/favicon1.ico sizes="16x16" type="image/png">
+		
+		<!-- Link tags for Bootstrap javasctipt references (makes the collapsed navbar expand to show links-->
+		<script src= "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src= "js/bootstrap.js"></script>		
+	</head>
+
+	<body>
+
+	<!-- Beginning of Navbar Code -->
+    <div id="headerCtrl" class="header light dark scroll-top">
+        <div class="container">
+            <h1><center><img src="images/vivifiTitle4.png" ></a></center></h1>
+            <ul class="navigation">
+                <li>
+                    <div class="Home dropdown">
+                        <a href="index.html" class="dropdown-toggle">Home</a>
+                       
+						<div class="dropdown-menu">
+                            <div class="col">
+                                 <h3>The Main Page</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="AboutUs dropdown">
+                        <a href="aboutUs.html" class="dropdown-toggle">About Us</a>
+                        <div class="dropdown-menu">
+                            <div class="col">
+                            <h3>Learn More About Vivifi</h3>   
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Artists dropdown">
+                        <a href="comingsoon.html" class="dropdown-toggle">Artists</a>
+                        <div class="dropdown-menu">
+                            <div class="col">
+                            <h3>Search Musicians</h3>   
+                            </div>  
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Group dropdown">
+                        <a href="comingsoon.html" class="dropdown-toggle">Group</a>
+                        <div class="dropdown-menu">
+                            <div class="col">
+                            <h3>Search Ensembles</h3>    
+                            </div>     
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ViviBook dropdown">
+                        <a href="comingsoon.html" class="dropdown-toggle">Vivi Book</a>
+                        <div class="dropdown-menu">
+                            <div class="col">
+                            <h3>Quick and Easy Booking</h3>   
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="AskUs dropdown">
+                        <a href="contactUs.html" class="dropdown-toggle">Ask Us</a>
+                        <div class="dropdown-menu">
+                            <div class="col">
+                            <h3>Don't want to search? Tell us what you're looking for and we will search for you!</h3>    
+                            </div>
+                        </div>
+                    </div>
+                </li>      
+            </ul>
+        </div>
+    </div>
+	
+	<!-- [Content] --> 
+	
+	<div class="content">
+		<div class="slider section" data-header="light"><a target="_blank" class="blog-badge" href="#"></a>
+			<a href="#"><img class="slide" id="mainSlide1" src="images/violin1.jpeg" data-sort="1" data-header="dark" ></a>
+		</div>
+	</div>
+	
+	<div class ="container">
+			<div class="formContainer">
+				<div class="col-md-6 col-md-offset-3">
+					<form method="post" name="emailForm" action="email.php">
+					
+					<h2>Are you an artist looking for an opportunity to play all over the valley? fill out our form, if you are talented enough we will put you in our directory and begin to look for gigs for you!</h2>
+					
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input type="email" class="form-control" id="email" placeholder="Enter email">
+					</div>
+					
+					<div class="form-group">
+						<label for="rptEmail">Confirm Email</label>
+						<input type="email" class="form-control" id="rptEmail" placeholder="Confirm email">
+					</div>
+					<!-- Not needed for initial mail-to
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" id="password" placeholder="Password">
+					</div>
+					
+					<div class="form-group">
+						<label for="rptPassword">Repeat Password</label>
+						<input type="password" class="form-control" id="rptPassword" placeholder="Password">
+					</div>
+					-->
+					<div class="form-group">
+						<label for="firstName">First Name</label>
+						<input type="text" class="form-control" id="firstName" placeholder="Miles">
+					</div>
+					
+					<div class="form-group">
+						<label for="lastName">Last Name</label>
+						<input type="text" class="form-control" id="lastName" placeholder="Davis">
+					</div>
+					
+					<div class="form-group">
+						<label for="genre">Genre</label>
+						<input type="text" class="form-control" id="genre" placeholder="Jazz">
+					</div>
+					
+					<div class="form-group">
+						<label for="instrument">Instrument&#40;s&#41;</label>
+						<input type="text" class="form-control" id="instrument" placeholder="Trumpet">
+					</div>
+					<!-- not needed for initial mail-to
+					<div class="form-group">
+						<label for="exampleInputFile">Upload Music File</label>
+						<input type="file" id="exampleInputFile">
+						<p class="help-block">Please upload a clip of you playing a solo piece of music, clips 30 seconds or longer are preferred.</p>
+					</div>
+					-->
+					<button type="submit" class="btn btn-default">Submit</button>
+					<button type="reset" class="btn btn-default">Clear</button>
+					
+					</form>
+			    </div>
+			</div>
+		</div>
+		 
+	 <!-- [FOOTER] -->
+    
+    <div class="footer">
+        <div class="container">
+            <ul class="company">
+				<img src="images/vivifiLogo1.png" >   
+            </ul>
+            <ul class="help">
+                <li class="heading">Help</li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="comingsoon.html">FAQ's</a></li> 
+            </ul>  
+			<ul class="help">
+                <li class="heading">Questions</li>
+                <li><a href="artistregistration.html">Are you a musician?</a></li>
+				<li><a href="ensembleregistration.html">Are you part of an ensemble?</a></li>
+                <li><a href="contactUs.html">Are you an event planner?</a></li> 
+		        <li><a href="contactUs.html">Unrelated Questions?</a></li> 
+            </ul>  
+			 <ul class="help">
+                <li class="heading">Find Us On:</li>
+                <li><a href="comingsoon.html">Facebook</a></li>
+                <li><a href="comingsoon.html">Twitter</a></li> 
+		        <li><a href="comingsoon.html">Google+</a></li> 
+
+            </ul>  
+			
+        </div>
+    </div>
+	
+	</body>
+</html>
